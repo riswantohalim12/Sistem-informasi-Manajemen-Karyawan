@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="fontawesome-free-6.6.0-web/css/all.min.css">
+  </head>
+  <body>
+   
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="#">Sistem Informasi Manajemen Karyawan</a>
+            <div class="d-flex align-items-center ms-auto">
+                <form class="d-flex me-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div class="icon">
+                    <h5>
+                        <i class="fa-solid fa-envelope mx-2 " data-toggle="tooltip" title="surat masuk"></i>
+                        <i class="fa-solid fa-bell mx-2" data-toggle="tooltip" title="nontifikasi"></i>
+                        <i class="fa-solid fa-arrow-right-from-bracket mx-2" data-toggle="tooltip" title="sign out"></i>
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="row no-gutters mt-5">
+        <div class="col-md-2 bg-dark mt-2 pr-3 pt-4">
+            <ul class="nav flex-column ml-3 mb-5">
+                <li class="nav-item">
+                  <a class="nav-link active text-white" aria-current="page" href="dashboard.html"><i class="fas fa-tachometer-alt mx-2"></i> Dashboard</a><hr class="bg-secondary" style="height: 1px; border: none; margin-top: 5px;">
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="karyawan.html"><i class="fa-solid fa-user mx-2"></i> Karyawan</a><hr class="bg-secondary" style="height: 1px; border: none; margin-top: 5px;">
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="jabatan.html"><i class="fa-solid fa-user-tie mx-2"></i> Jabatan</a><hr class="bg-secondary" style="height: 1px; border: none; margin-top: 5px;">
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="divisi.html"><i class="fa-solid fa-building mx-2"> </i>  Divisi</a><hr class="bg-secondary" style="height: 1px; border: none; margin-top: 5px;">
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="absen.html"><i class="fa-regular fa-calendar-check mx-2"></i> Absensi</a><hr class="bg-secondary" style="height: 1px; border: none; margin-top: 5px;">
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="izin.html"><i class="fa-regular fa-envelope mx-2"></i> Izin</a><hr class="bg-secondary" style="height: 1px; border: none; margin-top: 5px;">
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="lembur.html"><i class="fa-regular fa-clock mx-2"></i> Lembur</a><hr class="bg-secondary" style="height: 1px; border: none; margin-top: 5px;">
+                </li>
+              </ul>
+        </div>
+        <div class="col-md-10 p-5 pt-4 ">
+            <h3>
+                <i class="fas fa-tachometer-alt mx-2"></i>DASHBOARD</h3><hr>
+
+                <div class="row text-white">
+                    <div class="card bg-info mx-3" style="width: 18rem;">
+                        <div class="card-body">
+                        <div class="card-body-icon">
+                            <i class="fa-solid fa-user mx-2"></i>
+                        </div>
+                          <h5 class="card-title text-white">Jumlah Karyawan</h5>
+                          <div class="display-4 text-white">1.200</div>
+                          <a href="karyawan.html"><p class="card-text text-white">Lihat Detail <i class="fas fa-angle-double-right ml-2"></i></p></a>
+                        </div>
+                      </div>
+
+                    <div class="card bg-success mx-2" style="width: 18rem;">
+                        <div class="card-body">
+                        <div class="card-body-icon">
+                            <i class="fa-solid fa-user-tie "></i>
+                        </div>
+                          <h5 class="card-title text-white">Jumlah Jabatan</h5>
+                          <div class="display-4 text-white">58</div>
+                          <a href="jabatan.html"><p class="card-text text-white">Lihat Detail <i class="fas fa-angle-double-right ml-2"></i></p></a>
+                        </div>
+                      </div>
+
+                    <div class="card bg-danger mx-3" style="width: 18rem;">
+                        <div class="card-body">
+                        <div class="card-body-icon">
+                            <i class="fas fa-user-edit mx-2"> </i>
+                        </div>
+                          <h5 class="card-title text-white">Jumlah Divisi</h5>
+                          <div class="display-4 text-white">21</div>
+                          <a href="divisi.html"><p class="card-text text-white">Lihat Detail <i class="fas fa-angle-double-right ml-2"></i></p></a>
+                        </div>
+                      </div>
+                </div>
+
+
+        </div>
+    </div>
+    
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+  </body>
+</html>
